@@ -49,3 +49,6 @@
 [submodule "/Users/lachie/.homesick/repos/vimfiles/home/.vim/bundle/nerdtree"]
 	path = /Users/lachie/.homesick/repos/vimfiles/home/.vim/bundle/nerdtree
 	url = git://github.com/scrooloose/nerdtree.git
+[submodule "home/.vim/snippets"]
+	path = home/.vim/snippets
+	url = git@github.com:lachie/snipmate-snippets.git
