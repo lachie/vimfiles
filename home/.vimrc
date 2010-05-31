@@ -136,6 +136,8 @@ endif
 
 autocmd FileType make     set noexpandtab
 
+au BufNewFile,BufRead *.fish setf fish
+
 
 " NERDTree FTW
 map <leader>d :NERDTreeToggle<CR>
@@ -178,9 +180,11 @@ map <Leader>w :w<CR>
 
 
 " snipMate
-let snippets_dir = "~/.vim/snippets.local,~/.vim/snippets"
-ino <c-j> <c-r>=TriggerSnippet()<cr>
-snor <c-j> <esc>i<right><c-r>=TriggerSnippet()<cr>
+source ~/.vim/snippets/support_functions.vim
+
+"let snippets_dir = "~/.vim/snippets.local,~/.vim/snippets"
+"ino <c-j> <c-r>=TriggerSnippet()<cr>
+"snor <c-j> <esc>i<right><c-r>=TriggerSnippet()<cr>
 
 
 " tab autocomplete
@@ -193,6 +197,14 @@ snor <c-j> <esc>i<right><c-r>=TriggerSnippet()<cr>
   "endif
 "endfunction
 "inoremap <tab> <c-r>=InsertTabWrapper()<cr>
+
+let g:paste_keynote_tmp = $HOME."/tmp/convert_from_vim.html"
+let g:paste_keynote_rb  = $HOME."/bin/paste_vim_to_keynote.rb"
+
+
+command! Vimrc :tabe ~/.vimrc
+command! ReVimrc :so ~/.vimrc
+
 
 command! -range=% PasteKeynote :call PasteToKeynote(<line1>, <line2>)
 
@@ -217,10 +229,8 @@ func! PasteToKeynote(line1, line2)
   unlet g:html_use_css
 
 
-  "sleep 1000m
-  :wq! ~/tmp/convert_from_vim.html
-  "sleep 100m
-  let ignorey = system($HOME."/bin/paste_vim_to_keynote.rb ".$HOME."/tmp/convert_from_vim.html")
+  exe "wq!" g:paste_keynote_tmp
+  let ignorey = system(g:paste_keynote_rb . " " . g:paste_keynote_tmp)
 
   let &number=x
 endfunc
