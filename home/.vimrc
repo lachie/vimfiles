@@ -150,7 +150,7 @@ let Tlist_Ctags_Cmd="/Users/lachie/homebrew/bin/ctags"
 
 " rails.vim
 command! RTblueprints exe ":RTfind blueprints.rb"
-command! RTroutes :e config/routes.rb
+command! RTroutes :RTedit config/routes.rb
 command! RTconfig exe ":RTfind config"
 
 " Leader shortcuts for Rails commands
