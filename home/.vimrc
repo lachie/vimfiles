@@ -236,6 +236,16 @@ func! PasteToKeynote(line1, line2)
   let &number=x
 endfunc
 
+
+command! MarkdownPreview :call MarkdownPreview()
+
+func! MarkdownPreview()
+  exe "w"
+  let ignorey = system("ruby " . $HOME . "/bin/markdown_preview.rb " . getreg("%") )
+  echo ignorey
+endfunc
+
+
 let &cpo=s:cpo_save
 unlet s:cpo_save
 
