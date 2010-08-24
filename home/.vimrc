@@ -203,6 +203,7 @@ let g:paste_keynote_rb  = $HOME."/bin/paste_vim_to_keynote.rb"
 
 
 command! Vimrc :tabe ~/.vimrc
+command! Dotvim :tabe ~/.vim
 command! ReVimrc :so ~/.vimrc
 
 
