@@ -77,12 +77,13 @@ set number
 
 " highlighted search
 set hls
+
 "make <c-l> clear the highlight as well as redraw
 nnoremap <C-L> :nohls<CR><C-L>
 inoremap <C-L> <C-O>:nohls<CR>
 
 " Hide search highlighting
-map <Leader>l :nohls <CR>
+map <Leader>l <C-L>
 
 
 syntax on
@@ -241,7 +242,7 @@ command! MarkdownPreview :call MarkdownPreview()
 
 func! MarkdownPreview()
   exe "w"
-  let ignorey = system("ruby " . $HOME . "/bin/markdown_preview.rb " . getreg("%") )
+  let ignorey = system($HOME . "/.vim/bin/markdown_preview.rb " . getreg("%") )
   echo ignorey
 endfunc
 
