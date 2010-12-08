@@ -1,9 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='/Users/lachie/Dropbox/dev/plus2/integrity-artifacts'
-let g:netrw_dirhist_2='/Users/lachie/dev/plus2/integrity-artifacts'
-let g:netrw_dirhist_3='/Users/lachie/dev/plus2/yes_master/cfgdb'
-let g:netrw_dirhist_4='/Users/lachie/.rvm'
-let g:netrw_dirhist_5='/Users/lachie/dev/plus2/server_dna'
-let g:netrw_dirhist_6='/Users/lachie/.homesick/repos/vimfiles/home/.vim/snippets'
-let g:netrw_dirhist_7='/Users/lachie/.gem/ruby/1.8/gems/cucumber-0.6.4/lib'
