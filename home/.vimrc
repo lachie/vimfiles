@@ -138,6 +138,7 @@ endif
 autocmd FileType make     set noexpandtab
 
 au BufNewFile,BufRead *.fish setf fish
+au BufRead,BufNewFile *.scss set filetype=scss
 
 
 " NERDTree FTW
@@ -153,20 +154,18 @@ let Tlist_Ctags_Cmd="/Users/lachie/homebrew/bin/ctags"
 command! RTblueprints exe ":RTfind blueprints.rb"
 command! RTroutes :RTedit config/routes.rb
 command! RTconfig exe ":RTfind config"
+command! RTgemfile :RTedit Gemfile
+command! RTseeds  exe ":RTfind db/seeds"
+
 
 " Leader shortcuts for Rails commands
-map <Leader>m :Rmodel 
-map <Leader>c :Rcontroller 
-map <Leader>v :Rview 
-map <Leader>u :Runittest 
-map <Leader>f :Rfunctionaltest 
 map <Leader>i :Rintegrationtest 
 map <Leader>hh :Rhelper 
-map <Leader>tm :RTmodel 
-map <Leader>tc :RTcontroller 
-map <Leader>tv :RTview 
-map <Leader>tu :RTunittest 
-map <Leader>tf :RTfunctionaltest 
+map <Leader>m :RTmodel 
+map <Leader>c :RTcontroller 
+map <Leader>v :RTview 
+map <Leader>u :RTunittest 
+map <Leader>f :RTfunctionaltest 
 map <Leader>sm :RSmodel 
 map <Leader>sc :RScontroller 
 map <Leader>sv :RSview 
@@ -179,13 +178,6 @@ map <Leader>tp :tabedit +PeepOpen<CR>
 " save without reaching for :
 map <Leader>w :w<CR>
 
-
-" snipMate
-source ~/.vim/snippets/support_functions.vim
-
-"let snippets_dir = "~/.vim/snippets.local,~/.vim/snippets"
-"ino <c-j> <c-r>=TriggerSnippet()<cr>
-"snor <c-j> <esc>i<right><c-r>=TriggerSnippet()<cr>
 
 
 " tab autocomplete
@@ -206,6 +198,12 @@ let g:paste_keynote_rb  = $HOME."/bin/paste_vim_to_keynote.rb"
 command! Vimrc :tabe ~/.vimrc
 command! Dotvim :tabe ~/.vim
 command! ReVimrc :so ~/.vimrc
+
+
+autocmd FileType vim map <leader>ban I"<Del>  <Esc>A  "<Del><Esc>yyp0lv$hhr"yykPjj
+autocmd FileType javascript,php,c map <leader>ban I//  <Esc>A  //<Esc>yyp0llv$hhhr-yykPjj
+autocmd FileType python,ruby,sh,zsh map <leader>ban I#  <Esc>A  #<Esc>yyp^v$hhr#yykPjjo<BS><Esc>
+autocmd FileType css map <leader>ban I/*  <Esc>A  */<Esc>yyp0llv$r-$hc$*/<Esc>yykPjj
 
 
 command! -range=% PasteKeynote :call PasteToKeynote(<line1>, <line2>)
