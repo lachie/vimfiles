@@ -135,7 +135,7 @@ endif
 " set grepformat=%f:%l:%m
 
 
-autocmd FileType make     set noexpandtab
+" autocmd FileType make     set noexpandtab
 
 au BufNewFile,BufRead *.fish setf fish
 au BufRead,BufNewFile *.scss set filetype=scss
