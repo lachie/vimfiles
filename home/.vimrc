@@ -153,7 +153,10 @@ let Tlist_Ctags_Cmd="/Users/lachie/homebrew/bin/ctags"
 " rails.vim
 command! RTblueprints exe ":RTfind blueprints.rb"
 command! RTroutes :RTedit config/routes.rb
-command! RTconfig exe ":RTfind config"
+
+command! RTconfig :RTfind config
+command! RTscripts :RTfind app/scripts
+
 command! RTgemfile :RTedit Gemfile
 command! RTseeds  exe ":RTfind db/seeds"
 
