@@ -182,6 +182,11 @@ map <Leader>tp :tabedit +PeepOpen<CR>
 map <Leader>w :w<CR>
 
 
+let wiki_1 = {}
+let wiki_1.path = '~/Dropbox/Sync/vimwiki/'
+
+let g:vimwiki_list = [wiki_1]
+
 
 " tab autocomplete
 "function! InsertTabWrapper()
