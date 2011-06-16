@@ -161,6 +161,11 @@ command! RTgemfile :RTedit Gemfile
 command! RTseeds  exe ":RTfind db/seeds"
 
 
+autocmd User Rails silent! Rnavcommand cfg config -glob=**/* -default=model() -suffix=
+autocmd User Rails silent! Rnavcommand eg examples -glob=**/* -default=model() -suffix=.eg.rb
+autocmd User Rails silent! Rnavcommand coffee app/scripts -glob=**/* -default=model() -suffix=.coffee
+
+
 " Leader shortcuts for Rails commands
 map <Leader>i :Rintegrationtest 
 map <Leader>hh :Rhelper 
