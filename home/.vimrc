@@ -154,7 +154,7 @@ let Tlist_Ctags_Cmd="/Users/lachie/homebrew/bin/ctags"
 command! RTblueprints exe ":RTfind blueprints.rb"
 command! RTroutes :RTedit config/routes.rb
 
-command! RTconfig :RTfind config
+" command! RTconfig :RTfind config
 command! RTscripts :RTfind app/scripts
 
 command! RTgemfile :RTedit Gemfile
@@ -175,6 +175,12 @@ map <Leader>sv :RSview
 map <Leader>su :RSunittest 
 map <Leader>sf :RSfunctionaltest 
 map <Leader>si :RSintegrationtest 
+
+
+autocmd User Rails silent! Rnavcommand coffee app/scripts -glob=**/* -suffix=.coffee -default=model()
+autocmd User Rails silent! Rnavcommand eg examples -glob=**/* -suffix=.eg.rb -default=model()
+autocmd User Rails silent! Rnavcommand config config -glob=**/* -suffix=
+
 
 map <Leader>tp :tabedit +PeepOpen<CR>
 
