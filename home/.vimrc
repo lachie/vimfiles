@@ -179,7 +179,7 @@ map <Leader>si :RSintegrationtest
 
 autocmd User Rails silent! Rnavcommand coffee app/scripts -glob=**/* -suffix=.coffee -default=model()
 autocmd User Rails silent! Rnavcommand eg examples -glob=**/* -suffix=.eg.rb -default=model()
-autocmd User Rails silent! Rnavcommand config config -glob=**/* -suffix=
+autocmd User Rails silent! Rnavcommand cfg config -glob=**/* -suffix=
 
 
 map <Leader>tp :tabedit +PeepOpen<CR>
