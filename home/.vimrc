@@ -25,6 +25,12 @@ if has("gui_running")
 endif
 
 
+set backup
+set backupdir=~/.vim/backup
+set directory=~/.vim/tmp
+au BufWritePre * let &bex = '-' . strftime("%Y%m%d-%H%M%S") . '.vimbackup'
+
+
 " not sure what these all do :P
 imap <M-Down> }
 inoremap <D-Down> <C-End>
@@ -136,6 +142,7 @@ endif
 
 
 " autocmd FileType make     set noexpandtab
+autocmd FileType coffee     set expandtab
 
 au BufNewFile,BufRead *.fish setf fish
 au BufRead,BufNewFile *.scss set filetype=scss
@@ -187,6 +194,11 @@ map <Leader>tp :tabedit +PeepOpen<CR>
 
 " save without reaching for :
 map <Leader>w :w<CR>
+
+
+" maps to quickly find Unicode characters within the document 
+map ,uni :match Error /[\x7f-\xff]/<CR> 
+map ,uni2 /[^ -~]<CR>
 
 
 let wiki_1 = {}
