@@ -25,6 +25,12 @@ if has("gui_running")
 endif
 
 
+set backup
+set backupdir=~/.vim/backup
+set directory=~/.vim/tmp
+au BufWritePre * let &bex = '-' . strftime("%Y%m%d-%H%M%S") . '.vimbackup'
+
+
 " not sure what these all do :P
 imap <M-Down> }
 inoremap <D-Down> <C-End>
@@ -136,6 +142,7 @@ endif
 
 
 " autocmd FileType make     set noexpandtab
+autocmd FileType coffee     set expandtab
 
 au BufNewFile,BufRead *.fish setf fish
 au BufRead,BufNewFile *.scss set filetype=scss
@@ -188,6 +195,11 @@ map <Leader>tp :tabedit +PeepOpen<CR>
 map <Leader>w :w<CR>
 
 
+" maps to quickly find Unicode characters within the document 
+map ,uni :match Error /[\x7f-\xff]/<CR> 
+map ,uni2 /[^ -~]<CR>
+
+
 let wiki_1 = {}
 let wiki_1.path = '~/Dropbox/Sync/vimwiki/'
 
@@ -216,7 +228,7 @@ command! ReVimrc :so ~/.vimrc
 
 autocmd FileType vim map <leader>ban I"<Del>  <Esc>A  "<Del><Esc>yyp0lv$hhr"yykPjj
 autocmd FileType javascript,php,c map <leader>ban I//  <Esc>A  //<Esc>yyp0llv$hhhr-yykPjj
-autocmd FileType python,ruby,sh,zsh map <leader>ban I#  <Esc>A  #<Esc>yyp^v$hhr#yykPjjo<BS><Esc>
+autocmd FileType python,ruby,sh,zsh,coffee map <leader>ban I#  <Esc>A  #<Esc>yyp^v$hhr#yykPjjo<BS><Esc>
 autocmd FileType css map <leader>ban I/*  <Esc>A  */<Esc>yyp0llv$r-$hc$*/<Esc>yykPjj
 
 
