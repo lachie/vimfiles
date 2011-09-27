@@ -216,7 +216,7 @@ command! ReVimrc :so ~/.vimrc
 
 autocmd FileType vim map <leader>ban I"<Del>  <Esc>A  "<Del><Esc>yyp0lv$hhr"yykPjj
 autocmd FileType javascript,php,c map <leader>ban I//  <Esc>A  //<Esc>yyp0llv$hhhr-yykPjj
-autocmd FileType python,ruby,sh,zsh map <leader>ban I#  <Esc>A  #<Esc>yyp^v$hhr#yykPjjo<BS><Esc>
+autocmd FileType python,ruby,sh,zsh,coffee map <leader>ban I#  <Esc>A  #<Esc>yyp^v$hhr#yykPjjo<BS><Esc>
 autocmd FileType css map <leader>ban I/*  <Esc>A  */<Esc>yyp0llv$r-$hc$*/<Esc>yykPjj
 
 
