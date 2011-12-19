@@ -194,6 +194,9 @@ map <Leader>tp :tabedit +PeepOpen<CR>
 " save without reaching for :
 map <Leader>w :w<CR>
 
+" double percentage sign in command mode is expanded
+" to directory of current file - http://vimcasts.org/e/14
+cnoremap %% <C-R>=expand('%:h').'/'<cr>
 
 " maps to quickly find Unicode characters within the document 
 map ,uni :match Error /[\x7f-\xff]/<CR> 
