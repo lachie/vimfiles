@@ -25,10 +25,13 @@ if has("gui_running")
 endif
 
 
-set backup
-set backupdir=~/.vim/backup
-set directory=~/.vim/tmp
-au BufWritePre * let &bex = '-' . strftime("%Y%m%d-%H%M%S") . '.vimbackup'
+set nobackup
+"set backupdir=~/.vim/backup
+"au BufWritePre * let &bex = '-' . strftime("%Y%m%d-%H%M%S") . '.vimbackup'
+
+set noswapfile
+
+
 
 
 " not sure what these all do :P
@@ -66,6 +69,11 @@ inoremap <Down>  <NOP>
 
 inoremap jj <Esc>
 
+set lines=50  " Make sure our window is big enough to start with.
+set winwidth=79
+set winheight=5
+set winminheight=5
+set winheight=999
 
 
 let mapleader = ","
@@ -80,6 +88,7 @@ set wildmode=longest,list
 
 " line numbers
 set number
+set relativenumber
 
 " highlighted search
 set hls
@@ -195,6 +204,9 @@ map <Leader>tp :tabedit +PeepOpen<CR>
 " save without reaching for :
 map <Leader>w :w<CR>
 
+" double percentage sign in command mode is expanded
+" to directory of current file - http://vimcasts.org/e/14
+cnoremap %% <C-R>=expand('%:h').'/'<cr>
 
 " maps to quickly find Unicode characters within the document 
 map ,uni :match Error /[\x7f-\xff]/<CR> 
@@ -225,6 +237,16 @@ let g:paste_keynote_rb  = $HOME."/bin/paste_vim_to_keynote.rb"
 command! Vimrc :tabe ~/.vimrc
 command! Dotvim :tabe ~/.vim
 command! ReVimrc :so ~/.vimrc
+
+
+nmap <Leader>vv :Vimrc<CR>
+nmap <Leader>vd :Dotvim<CR>
+nmap <Leader>vs :ReVimrc<CR>
+
+
+nmap <Leader>ss :w<CR>:SpecFocused<CR>
+nmap <Leader>sa :w<CR>:SpecFile<CR>
+nmap <Leader>sl :w<CR>:SpecLast<CR>
 
 
 autocmd FileType vim map <leader>ban I"<Del>  <Esc>A  "<Del><Esc>yyp0lv$hhr"yykPjj
