@@ -25,10 +25,9 @@ if has("gui_running")
 endif
 
 
-set backup
-set backupdir=~/.vim/backup
-set directory=~/.vim/tmp
-au BufWritePre * let &bex = '-' . strftime("%Y%m%d-%H%M%S") . '.vimbackup'
+set nobackup
+set nowritebackup
+set noswapfile
 
 
 " not sure what these all do :P
@@ -261,6 +260,9 @@ func! PasteToKeynote(line1, line2)
   let &number=x
 endfunc
 
+
+
+nmap <leader>m :!open -a Marked %<CR>
 
 command! MarkdownPreview :call MarkdownPreview()
 
