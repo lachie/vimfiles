@@ -27,8 +27,9 @@ set wildmode=longest,list
 set number
 set relativenumber
 
-" highlighted search
+" search
 set hls
+set incsearch
 
 
 set autoread

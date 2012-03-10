@@ -45,25 +45,7 @@ inoremap <C-L> <C-O>:nohls<CR>
 map <Leader>l <C-L>
 
 
-" NERDTree FTW
-map <leader>d :NERDTreeToggle<CR>
-map <leader>h :NERDTreeFind<CR>
 
-
-" Leader shortcuts for Rails commands
-map <Leader>i :Rintegrationtest 
-map <Leader>hh :Rhelper 
-map <Leader>m :RTmodel 
-map <Leader>c :RTcontroller 
-map <Leader>v :RTview 
-map <Leader>u :RTunittest 
-map <Leader>f :RTfunctionaltest 
-map <Leader>sm :RSmodel 
-map <Leader>sc :RScontroller 
-map <Leader>sv :RSview 
-map <Leader>su :RSunittest 
-map <Leader>sf :RSfunctionaltest 
-map <Leader>si :RSintegrationtest 
 
 
 map <Leader>tp :tabedit +PeepOpen<CR>
@@ -94,4 +76,45 @@ nmap <Leader>sl :w<CR>:SpecLast<CR>
 vnoremap < <gv
 vnoremap > >gv
 
+" Removes doc lookup binding because it's easy to fat finger
+nmap K k
+vmap K k
 
+" Use ; for : in normal and visual mode, less keystrokes
+nnoremap ; :
+vnoremap ; :
+
+"
+" Mappings for Plugins
+"
+" NERDTree FTW
+map <leader>d :NERDTreeToggle<CR>
+map <leader>h :NERDTreeFind<CR>
+
+
+" rails.vim
+map <Leader>i :Rintegrationtest 
+map <Leader>hh :Rhelper 
+map <Leader>m :RTmodel 
+map <Leader>c :RTcontroller 
+map <Leader>v :RTview 
+map <Leader>u :RTunittest 
+map <Leader>f :RTfunctionaltest 
+map <Leader>sm :RSmodel 
+map <Leader>sc :RScontroller 
+map <Leader>sv :RSview 
+map <Leader>su :RSunittest 
+map <Leader>sf :RSfunctionaltest 
+map <Leader>si :RSintegrationtest 
+
+
+" fugitive
+nmap <Leader>gc :Gcommit<CR>
+nmap <Leader>gw :Gwrite<CR>
+nmap <Leader>gs :Gstatus<CR>
+nmap <Leader>gp :Git push<CR>
+ " Mnemonic, gu = Git Update
+nmap <Leader>gu :Git pull<CR>
+nmap <Leader>gd :Gdiff<CR>
+" Exit a diff by closing the diff window
+nmap <Leader>gx :wincmd h<CR>:q<CR>

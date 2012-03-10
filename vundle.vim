@@ -19,6 +19,7 @@ Bundle "tpope/vim-fugitive"
 
 " file nav
 Bundle "scrooloose/nerdtree"
+" XXX to try, LustyJuggler
 
 " text nav
 Bundle "edsono/vim-matchit"
