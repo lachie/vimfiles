@@ -1,6 +1,7 @@
 
 syntax on             " Enable syntax highlighting
-colorscheme desert
+colorscheme jellybeans
+set background=dark
 
 filetype on           " Enable filetype detection
 filetype indent on    " Enable filetype-specific indenting
@@ -33,7 +34,6 @@ set hls
 set autoread
 
 set mouse=a
-set background=dark
 set ruler
 set printexpr=system('open\ -a\ Preview\ '.v:fname_in)\ +\ v:shell_error
 

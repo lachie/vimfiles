@@ -12,6 +12,7 @@ Bundle "Lokaltog/vim-powerline"
 Bundle "nathanaelkane/vim-indent-guides"
 Bundle "Rykka/ColorV"
 Bundle "tomtom/quickfixsigns_vim"
+Bundle 'nanotech/jellybeans.vim'
 
 " git
 Bundle "tpope/vim-fugitive"
