@@ -13,3 +13,5 @@ let wiki_1.path = '~/Dropbox/Sync/vimwiki/'
 let g:vimwiki_list = [wiki_1]
 
 
+" powerline
+let g:Powerline_symbols = 'fancy'

@@ -12,6 +12,7 @@ compiler ruby         " Enable compiler support for ruby
 set nobackup
 set noswapfile
 
+set laststatus=2
 
 set helplang=en
 
