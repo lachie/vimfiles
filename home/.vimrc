@@ -239,6 +239,10 @@ nmap <Leader>vd :Dotvim<CR>
 nmap <Leader>vs :ReVimrc<CR>
 
 
+command! -range=% CleanBlanks :<line1>,<line2>s/^\s\+$//
+
+
+
 nmap <Leader>ss :w<CR>:SpecFocused<CR>
 nmap <Leader>sa :w<CR>:SpecFile<CR>
 nmap <Leader>sl :w<CR>:SpecLast<CR>
