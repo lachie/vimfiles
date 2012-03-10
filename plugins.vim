@@ -17,3 +17,5 @@ let g:vimwiki_list = [wiki_1]
 
 " powerline
 let g:Powerline_symbols = 'fancy'
+
+hi Todo guifg=#FF4500 guibg=#CCCC4B
