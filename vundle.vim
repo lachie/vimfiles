@@ -40,6 +40,7 @@ Bundle "tpope/vim-rails"
 " language support
 Bundle 'kchmck/vim-coffee-script'
 Bundle "jeroenbourgois/vim-actionscript"
+Bundle "groenewege/vim-less"
 
 Bundle 'vimwiki'
 
