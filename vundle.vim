@@ -30,6 +30,7 @@ Bundle "ervandew/supertab"
 
 Bundle "kana/vim-textobj-user"
 Bundle "nelstrom/vim-textobj-rubyblock"
+Bundle "tpope/vim-surround"
 
 " XXX to try: Bundle "Shougo/neocomplcache"
 
