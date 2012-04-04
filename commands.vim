@@ -1,12 +1,12 @@
 " rails.vim
-command! RTblueprints exe ":RTfind blueprints.rb"
-command! RTroutes :RTedit config/routes.rb
+command! RTblueprints exe ":find blueprints.rb"
+command! RTroutes :RT config/routes.rb
 
 " command! RTconfig :RTfind config
-command! RTscripts :RTfind app/scripts
+command! RTscripts :find app/scripts
 
 command! RTgemfile :RTedit Gemfile
-command! RTseeds  exe ":RTfind db/seeds"
+command! RTseeds  exe ":find db/seeds"
 
 
 command! Vimrc :tabe ~/.vimrc
