@@ -57,6 +57,14 @@ map <Leader>w :w<CR>
 " to directory of current file - http://vimcasts.org/e/14
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
 
+" command-line
+cnoremap <C-A> <Home>
+cnoremap <C-F> <Right>
+cnoremap <C-B> <Left>
+cnoremap <Esc>b <S-Left>
+cnoremap <Esc>f <S-Right>
+
+
 " maps to quickly find Unicode characters within the document 
 map ,uni :match Error /[\x7f-\xff]/<CR> 
 map ,uni2 /[^ -~]<CR>
