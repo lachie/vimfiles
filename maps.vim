@@ -93,8 +93,10 @@ nmap K k
 vmap K k
 
 " Use ; for : in normal and visual mode, less keystrokes
-nnoremap ; :
-vnoremap ; :
+"nnoremap ; :
+"vnoremap ; :
+"nnoremap : ;
+"vnoremap : ;
 
 "
 " Mappings for Plugins
