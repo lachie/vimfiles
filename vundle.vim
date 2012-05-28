@@ -27,6 +27,7 @@ Bundle "scrooloose/nerdtree"
 " text nav
 Bundle "edsono/vim-matchit"
 Bundle 'tapichu/Align'
+Bundle "godlygeek/tabular"
 Bundle "scrooloose/nerdcommenter"
 Bundle "ervandew/supertab"
 
@@ -47,6 +48,7 @@ Bundle "groenewege/vim-less"
 Bundle "rodjek/vim-puppet"
 Bundle "godlygeek/tabular"
 
+" ruby aids
 Bundle 'vimwiki'
 
 filetype plugin indent on
