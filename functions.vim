@@ -35,13 +35,18 @@ endfunc
 
 
 func! SpinPush(...)
-  let filename = expand("%:p")
-  let cmd = "bundle exec spin push " . shellescape(l:filename)
 
   " add line if requested
-  if a:0 == 1 && a:1 ==? "focused"
-     let cmd = cmd . ':' . line('.')
+  if a:0 == 1 && a:1 ==? "last" && exists("s:last_spin_filename")
+    let filename = s:last_spin_filename
+  elseif a:0 == 1 && a:1 ==? "focused"
+    let filename = expand("%:p") . ':' . line('.')
+  else
+    let filename = expand("%:p")
   endif
+
+  let cmd = "bundle exec spin push " . shellescape(l:filename)
+  let s:last_spin_filename = l:filename
 
   " chdir to rails root if possible - probably redundant
   let rr = RailsRoot()

@@ -81,6 +81,7 @@ nmap <Leader>sl :w<CR>:SpecLast<CR>
 
 nmap <Leader>ss :w<CR>:call SpinPush("focused")<CR>
 nmap <Leader>sa :w<CR>:call SpinPush()<CR>
+nmap <Leader>sl :w<CR>:call SpinPush("last")<CR>
 
 
 " Reselect the visual area when changing indenting in visual mode.
