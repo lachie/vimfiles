@@ -18,4 +18,10 @@ let g:vimwiki_list = [wiki_1]
 " powerline
 let g:Powerline_symbols = 'fancy'
 
+
+" jellybeans tweaks
 hi Todo guifg=#FF4500 guibg=#CCCC4B
+
+
+" gist copy to clipboard
+let g:gist_clip_command = 'pbcopy'

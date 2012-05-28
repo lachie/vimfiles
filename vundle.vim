@@ -17,6 +17,8 @@ Bundle 'nanotech/jellybeans.vim'
 
 " git
 Bundle "tpope/vim-fugitive"
+Bundle "mattn/gist-vim"
+Bundle "mattn/webapi-vim"
 
 " file nav
 Bundle "scrooloose/nerdtree"
@@ -42,6 +44,8 @@ Bundle "tpope/vim-rails"
 Bundle 'kchmck/vim-coffee-script'
 Bundle "jeroenbourgois/vim-actionscript"
 Bundle "groenewege/vim-less"
+Bundle "rodjek/vim-puppet"
+Bundle "godlygeek/tabular"
 
 Bundle 'vimwiki'
 
