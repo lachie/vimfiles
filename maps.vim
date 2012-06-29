@@ -75,9 +75,13 @@ nmap <Leader>vd :Dotvim<CR>
 nmap <Leader>vs :ReVimrc<CR>
 
 
-nmap <Leader>ss :w<CR>:SpecFocused<CR>
-nmap <Leader>sa :w<CR>:SpecFile<CR>
+"nmap <Leader>ss :w<CR>:SpecFocused<CR>
+"nmap <Leader>sa :w<CR>:SpecFile<CR>
 nmap <Leader>sl :w<CR>:SpecLast<CR>
+
+nmap <Leader>ss :w<CR>:call SpinPush("focused")<CR>
+nmap <Leader>sa :w<CR>:call SpinPush()<CR>
+nmap <Leader>sl :w<CR>:call SpinPush("last")<CR>
 
 
 " Reselect the visual area when changing indenting in visual mode.
@@ -89,8 +93,10 @@ nmap K k
 vmap K k
 
 " Use ; for : in normal and visual mode, less keystrokes
-nnoremap ; :
-vnoremap ; :
+"nnoremap ; :
+"vnoremap ; :
+"nnoremap : ;
+"vnoremap : ;
 
 "
 " Mappings for Plugins

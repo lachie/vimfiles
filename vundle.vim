@@ -17,6 +17,8 @@ Bundle 'nanotech/jellybeans.vim'
 
 " git
 Bundle "tpope/vim-fugitive"
+Bundle "mattn/gist-vim"
+Bundle "mattn/webapi-vim"
 
 " file nav
 Bundle "scrooloose/nerdtree"
@@ -25,6 +27,7 @@ Bundle "scrooloose/nerdtree"
 " text nav
 Bundle "edsono/vim-matchit"
 Bundle 'tapichu/Align'
+Bundle "godlygeek/tabular"
 Bundle "scrooloose/nerdcommenter"
 Bundle "ervandew/supertab"
 
@@ -43,7 +46,10 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle "jeroenbourgois/vim-actionscript"
 Bundle "groenewege/vim-less"
 Bundle "vim-scripts/VimClojure"
+Bundle "rodjek/vim-puppet"
+Bundle "godlygeek/tabular"
 
+" ruby aids
 Bundle 'vimwiki'
 
 filetype plugin indent on

@@ -27,10 +27,41 @@ func! PasteToKeynote(line1, line2)
 endfunc
 
 
-
 func! MarkdownPreview()
   exe "w"
   let ignorey = system($HOME . "/.vim/bin/markdown_preview.rb " . getreg("%") )
   echo ignorey
 endfunc
 
+
+func! SpinPush(...)
+
+  " add line if requested
+  if a:0 == 1 && a:1 ==? "last" && exists("s:last_spin_filename")
+    let filename = s:last_spin_filename
+  elseif a:0 == 1 && a:1 ==? "focused"
+    let filename = expand("%:p") . ':' . line('.')
+  else
+    let filename = expand("%:p")
+  endif
+
+  let cmd = "bundle exec spin push " . shellescape(l:filename)
+  let s:last_spin_filename = l:filename
+
+  " chdir to rails root if possible - probably redundant
+  let rr = RailsRoot()
+  if len(rr) > 0
+    let cmd = "cd " . rr . " && " . cmd
+  endif
+
+  " wrap in a rbenv subshell
+  " TODO get ruby version from somewhere sensible
+  let cmd = "rbenv shell 1.9.3-p125 && " . cmd
+
+  let cmd = cmd . " 2>&1"
+
+  echom "pushing: " . cmd
+  let output = system(cmd)
+  echom "output: " . output
+  echom "returned: " . v:shell_error
+endfunc
