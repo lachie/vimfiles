@@ -42,6 +42,7 @@ Bundle "tpope/vim-rails"
 Bundle 'kchmck/vim-coffee-script'
 Bundle "jeroenbourgois/vim-actionscript"
 Bundle "groenewege/vim-less"
+Bundle "vim-scripts/VimClojure"
 
 Bundle 'vimwiki'
 
