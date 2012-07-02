@@ -15,7 +15,7 @@ command! ReVimrc :so ~/.vimrc
 
 command! -range=% PasteKeynote :call PasteToKeynote(<line1>, <line2>)
 
-command! MarkdownPreview :call MarkdownPreview()
+command! MarkdownPreview exe ":!open -a Marked %"
 
 
 command! -range=% PrettifyJson :<line1>,<line2>!ruby -rubygems -e'gem "yajl-ruby"; require "yajl"; Yajl::Encoder.encode Yajl::Parser.parse($stdin), $stdout, :pretty => true'
