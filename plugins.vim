@@ -25,3 +25,10 @@ hi Todo guifg=#FF4500 guibg=#CCCC4B
 
 " gist copy to clipboard
 let g:gist_clip_command = 'pbcopy'
+
+" slime
+let g:slime_target = "tmux"
+
+" clj
+let vimclojure#HighlightBuiltins=1      " Highlight Clojure's builtins
+let vimclojure#ParenRainbow=1           " Rainbow parentheses'!

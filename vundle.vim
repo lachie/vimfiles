@@ -15,6 +15,8 @@ Bundle "Rykka/ColorV"
 Bundle "tomtom/quickfixsigns_vim"
 Bundle 'nanotech/jellybeans.vim'
 
+Bundle "jpalardy/vim-slime"
+
 " git
 Bundle "tpope/vim-fugitive"
 Bundle "mattn/gist-vim"
@@ -48,6 +50,7 @@ Bundle "groenewege/vim-less"
 Bundle "vim-scripts/VimClojure"
 Bundle "rodjek/vim-puppet"
 Bundle "godlygeek/tabular"
+Bundle "agrewal/vim-thrift"
 
 " ruby aids
 Bundle 'vimwiki'
