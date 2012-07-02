@@ -71,6 +71,7 @@ map ,uni2 /[^ -~]<CR>
 
 
 nmap <Leader>vv :Vimrc<CR>
+nmap <Leader>vb :tabe ~/.vim/vundle.vim<CR>
 nmap <Leader>vd :Dotvim<CR>
 nmap <Leader>vs :ReVimrc<CR>
 
