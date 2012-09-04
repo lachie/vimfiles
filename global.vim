@@ -1,6 +1,11 @@
 
 syntax on             " Enable syntax highlighting
-colorscheme jellybeans
+"colorscheme jellybeans
+"colorscheme Tomorrow-Night
+"colorscheme Tomorrow-Night-Eighties
+"colorscheme Tomorrow-Night-Bright
+colorscheme zenburn
+
 set background=dark
 
 filetype on           " Enable filetype detection
