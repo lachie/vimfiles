@@ -32,3 +32,8 @@ let g:slime_target = "tmux"
 " clj
 let vimclojure#HighlightBuiltins=1      " Highlight Clojure's builtins
 let vimclojure#ParenRainbow=1           " Rainbow parentheses'!
+
+" ctrlp
+let g:ctrlp_custom_ignore = {
+\ 'dir': '\.git$\|\.hg$\|\.svn$\|\.yardoc\|public\/images\|public\/system\|data\|log\|tmp\|vendor/bundled$'
+\ }
