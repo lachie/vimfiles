@@ -23,7 +23,8 @@ set laststatus=2
 set helplang=en
 
 " yank etc goes onto system clipboard, too
-set clipboard+=unnamed
+set clipboard+=unnamedplus
+
 
 set wildmenu
 set wildmode=longest,list
