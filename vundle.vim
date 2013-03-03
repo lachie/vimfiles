@@ -11,7 +11,7 @@ Bundle "gmarik/vundle"
 " UI
 Bundle "Lokaltog/vim-powerline"
 Bundle "nathanaelkane/vim-indent-guides"
-Bundle "Rykka/ColorV"
+" Bundle "Rykka/ColorV"
 Bundle "tomtom/quickfixsigns_vim"
 Bundle 'nanotech/jellybeans.vim'
 
@@ -24,7 +24,9 @@ Bundle "mattn/webapi-vim"
 
 " file nav
 Bundle "scrooloose/nerdtree"
-" XXX to try, LustyJuggler
+Bundle "jbach/lusty"
+Bundle "kien/ctrlp.vim"
+	
 
 " text nav
 Bundle "edsono/vim-matchit"
