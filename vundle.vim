@@ -11,32 +11,27 @@ Bundle "gmarik/vundle"
 " UI
 Bundle "Lokaltog/vim-powerline"
 Bundle "nathanaelkane/vim-indent-guides"
-" Bundle "Rykka/ColorV"
 Bundle "tomtom/quickfixsigns_vim"
 Bundle 'nanotech/jellybeans.vim'
 
-Bundle "jpalardy/vim-slime"
 
 " git
 Bundle "tpope/vim-fugitive"
-Bundle "mattn/gist-vim"
-Bundle "mattn/webapi-vim"
 
 " file nav
 Bundle "scrooloose/nerdtree"
-Bundle "jbach/lusty"
 Bundle "kien/ctrlp.vim"
 	
 
 " text nav
 Bundle "edsono/vim-matchit"
 Bundle 'tapichu/Align'
-Bundle "godlygeek/tabular"
+" Bundle "godlygeek/tabular"
 Bundle "scrooloose/nerdcommenter"
 Bundle "ervandew/supertab"
 
-Bundle "kana/vim-textobj-user"
-Bundle "nelstrom/vim-textobj-rubyblock"
+" Bundle "kana/vim-textobj-user"
+" Bundle "nelstrom/vim-textobj-rubyblock"
 Bundle "tpope/vim-surround"
 
 " XXX to try: Bundle "Shougo/neocomplcache"
@@ -47,12 +42,9 @@ Bundle "tpope/vim-rails"
 
 " language support
 Bundle 'kchmck/vim-coffee-script'
-Bundle "jeroenbourgois/vim-actionscript"
-Bundle "groenewege/vim-less"
-Bundle "vim-scripts/VimClojure"
-Bundle "rodjek/vim-puppet"
-Bundle "godlygeek/tabular"
-Bundle "agrewal/vim-thrift"
+" Bundle "groenewege/vim-less"
+" Bundle "vim-scripts/VimClojure"
+" Bundle "agrewal/vim-thrift"
 
 " ruby aids
 Bundle 'vimwiki'
