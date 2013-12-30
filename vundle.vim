@@ -9,7 +9,8 @@ call vundle#rc()
 Bundle "gmarik/vundle"
 
 " UI
-Bundle "Lokaltog/vim-powerline"
+"Bundle "Lokaltog/vim-powerline"
+Bundle "bling/vim-airline"
 Bundle "nathanaelkane/vim-indent-guides"
 Bundle "tomtom/quickfixsigns_vim"
 Bundle 'nanotech/jellybeans.vim'
@@ -45,6 +46,8 @@ Bundle 'kchmck/vim-coffee-script'
 " Bundle "groenewege/vim-less"
 " Bundle "vim-scripts/VimClojure"
 " Bundle "agrewal/vim-thrift"
+Bundle "jnwhiteh/vim-golang"
+Bundle "plasticboy/vim-markdown"
 
 " ruby aids
 Bundle 'vimwiki'
