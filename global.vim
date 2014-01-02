@@ -22,8 +22,12 @@ set laststatus=2
 
 set helplang=en
 
+set ttymouse=xterm2
+
 " yank etc goes onto system clipboard, too
-set clipboard+=unnamedplus
+if $TMUX == ''
+  set clipboard+=unnamedplus
+endif
 
 
 set wildmenu
