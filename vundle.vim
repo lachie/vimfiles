@@ -44,9 +44,8 @@ Bundle "tpope/vim-rails"
 " language support
 Bundle 'kchmck/vim-coffee-script'
 " Bundle "groenewege/vim-less"
-" Bundle "vim-scripts/VimClojure"
+Bundle "vim-scripts/VimClojure"
 " Bundle "agrewal/vim-thrift"
-Bundle "jnwhiteh/vim-golang"
 Bundle "plasticboy/vim-markdown"
 
 " ruby aids

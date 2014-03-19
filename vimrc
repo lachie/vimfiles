@@ -4,6 +4,14 @@ set cpo&vim
 
 set nocompatible      " We're running Vim, not Vi!
 
+filetype off
+filetype plugin indent off
+set runtimepath+=$GOROOT/misc/vim
+filetype plugin indent on
+syntax on
+
+let g:gofmt_command='goimports'
+autocmd FileType go autocmd BufWritePre <buffer> Fmt
 
 source $HOME/.vim/vundle.vim
 source $HOME/.vim/global.vim
