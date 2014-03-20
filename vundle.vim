@@ -15,14 +15,12 @@ Bundle "nathanaelkane/vim-indent-guides"
 Bundle "tomtom/quickfixsigns_vim"
 Bundle 'nanotech/jellybeans.vim'
 
-
 " git
 Bundle "tpope/vim-fugitive"
 
 " file nav
 Bundle "scrooloose/nerdtree"
 Bundle "kien/ctrlp.vim"
-	
 
 " text nav
 Bundle "edsono/vim-matchit"
@@ -44,7 +42,7 @@ Bundle "tpope/vim-rails"
 " language support
 Bundle 'kchmck/vim-coffee-script'
 " Bundle "groenewege/vim-less"
-Bundle "vim-scripts/VimClojure"
+"Bundle "vim-scripts/VimClojure"
 " Bundle "agrewal/vim-thrift"
 Bundle "plasticboy/vim-markdown"
 

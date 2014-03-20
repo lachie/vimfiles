@@ -37,3 +37,6 @@ let vimclojure#ParenRainbow=1           " Rainbow parentheses'!
 let g:ctrlp_custom_ignore = {
 \ 'dir': '\.git$\|\.hg$\|\.svn$\|\.yardoc\|public\/images\|public\/system\|data\|log\|tmp\|vendor/bundled$'
 \ }
+
+
+let g:go_fmt_commands = 0

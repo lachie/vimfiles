@@ -3,6 +3,7 @@ autocmd FileType coffee     set expandtab
 
 au BufNewFile,BufRead *.fish setf fish
 au BufRead,BufNewFile *.scss set filetype=scss
+au BufNewFile,BufRead *.bats set filetype=sh
 
 
 autocmd User Rails silent! Rnavcommand coffee app/scripts -glob=**/* -suffix=.coffee -default=model()
