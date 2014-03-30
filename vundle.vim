@@ -45,6 +45,7 @@ Bundle 'kchmck/vim-coffee-script'
 "Bundle "vim-scripts/VimClojure"
 " Bundle "agrewal/vim-thrift"
 Bundle "plasticboy/vim-markdown"
+Bundle "ekalinin/Dockerfile.vim"
 
 " ruby aids
 Bundle 'vimwiki'
