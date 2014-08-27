@@ -35,7 +35,7 @@ set wildmode=longest,list
 
 " line numbers
 set number
-set relativenumber
+" set relativenumber
 
 " search
 set hls
