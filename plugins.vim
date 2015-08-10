@@ -40,3 +40,8 @@ let g:ctrlp_custom_ignore = {
 
 
 let g:go_fmt_commands = 0
+
+" Ack
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif

@@ -21,6 +21,7 @@ Bundle "tpope/vim-fugitive"
 " file nav
 Bundle "scrooloose/nerdtree"
 Bundle "kien/ctrlp.vim"
+Bundle "mileszs/ack.vim"
 
 " text nav
 Bundle "edsono/vim-matchit"
@@ -37,15 +38,16 @@ Bundle "tpope/vim-surround"
 
 " web
 Bundle "skammer/vim-css-color"
-Bundle "tpope/vim-rails"
+"Bundle "tpope/vim-rails"
 
 " language support
 Bundle 'kchmck/vim-coffee-script'
 " Bundle "groenewege/vim-less"
-"Bundle "vim-scripts/VimClojure"
+" Bundle "vim-scripts/VimClojure"
 " Bundle "agrewal/vim-thrift"
 Bundle "plasticboy/vim-markdown"
 Bundle "ekalinin/Dockerfile.vim"
+Bundle "ngmy/vim-rubocop"
 
 " ruby aids
 Bundle 'vimwiki'
