@@ -1,6 +1,13 @@
 " indent guide
 let g:indent_guides_enable_on_vim_startup=1
 
+let g:indent_guides_auto_colors = 0
+"autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#a6a6a6
+"autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#6e6e6e
+
+hi IndentGuidesOdd  guibg=#a6a6a6
+hi IndentGuidesEven guibg=#6e6e6e
+
 " nerdtree
 let NERDTreeQuitOnOpen=1
 
@@ -40,6 +47,7 @@ let g:ctrlp_custom_ignore = {
 
 
 let g:go_fmt_commands = 0
+" let g:go_fmt_commands = 0
 
 " Ack
 if executable('ag')
