@@ -54,6 +54,8 @@ Bundle "plasticboy/vim-markdown"
 Bundle "ekalinin/Dockerfile.vim"
 Bundle "ngmy/vim-rubocop"
 
+Bundle "pangloss/vim-javascript"
+
 " Bundle "vim-scripts/VimClojure"
 Bundle "tpope/vim-fireplace"
 Bundle "guns/vim-clojure-static"
