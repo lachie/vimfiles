@@ -65,3 +65,21 @@ func! SpinPush(...)
   echom "output: " . output
   echom "returned: " . v:shell_error
 endfunc
+
+
+func! CamelFilename()
+  let filename = expand("%:r")
+
+
+  let filename = substitute(filename, "^lib/", "", "")
+  let filename = substitute(filename, "/\\([a-zA-z]\\)", "::\\U\\1", "g")
+
+  let filename = substitute(filename, "^\\([a-z]\\)", "\\U\\1", "")
+  let filename = substitute(filename, "_\\([a-zA-Z]\\)", "\\U\\1", "g")
+
+  return filename
+endfunc
+
+func! MakeModule()
+  return "module " . CamelFilename() . "\n  extend self\nend"
+endfunc

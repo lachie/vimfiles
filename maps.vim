@@ -139,3 +139,6 @@ nmap <Leader>gx :wincmd h<CR>:q<CR>
 
 " convert => to : syntax in ruby 1.9
 nmap <Leader>hr /=><CR>h3xi:<ESC>F:x
+
+nmap <Leader>ff "=CamelFilename()<C-M>p
+nmap <Leader>fm "=MakeModule()<C-M>p
