@@ -9,13 +9,11 @@ call vundle#rc()
 Bundle "gmarik/vundle"
 
 " UI
-"Bundle "Lokaltog/vim-powerline"
 Bundle "bling/vim-airline"
-Bundle "nathanaelkane/vim-indent-guides"
-Bundle "tomtom/quickfixsigns_vim"
+" Bundle "nathanaelkane/vim-indent-guides"
+" Bundle "tomtom/quickfixsigns_vim"
 Bundle 'nanotech/jellybeans.vim'
 
-Bundle 'rking/ag.vim'
 
 " git
 Bundle "tpope/vim-fugitive"
@@ -23,36 +21,38 @@ Bundle "tpope/vim-fugitive"
 " file nav
 Bundle "scrooloose/nerdtree"
 Bundle "kien/ctrlp.vim"
-Bundle "mileszs/ack.vim"
+" Bundle "mileszs/ack.vim"
+Bundle 'rking/ag.vim'
 
 " text nav
 Bundle "edsono/vim-matchit"
 Bundle 'tapichu/Align'
-" Bundle "godlygeek/tabular"
+Bundle "godlygeek/tabular"
 Bundle "scrooloose/nerdcommenter"
 Bundle "ervandew/supertab"
 
-Bundle "mileszs/ack.vim"
 
 " Bundle "kana/vim-textobj-user"
 " Bundle "nelstrom/vim-textobj-rubyblock"
-Bundle "tpope/vim-surround"
+" Bundle "tpope/vim-surround"
 
 " XXX to try: Bundle "Shougo/neocomplcache"
 
 " web
-Bundle "skammer/vim-css-color"
+"Bundle "skammer/vim-css-color"
 "Bundle "tpope/vim-rails"
-Bundle "tpope/vim-haml"
+"Bundle "tpope/vim-haml"
 
 " language support
-Bundle 'kchmck/vim-coffee-script'
+" Bundle "kchmck/vim-coffee-script"
+
 " Bundle "groenewege/vim-less"
 " Bundle "vim-scripts/VimClojure"
-" Bundle "agrewal/vim-thrift"
-Bundle "plasticboy/vim-markdown"
-Bundle "ekalinin/Dockerfile.vim"
+"
+" Bundle "plasticboy/vim-markdown"
+" Bundle "ekalinin/Dockerfile.vim"
 Bundle "ngmy/vim-rubocop"
+Bundle "elixir-lang/vim-elixir"
 
 Bundle "pangloss/vim-javascript"
 
