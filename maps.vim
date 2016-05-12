@@ -142,3 +142,4 @@ nmap <Leader>hr /=><CR>h3xi:<ESC>F:x
 
 nmap <Leader>ff "=CamelFilename()<C-M>p
 nmap <Leader>fm "=MakeModule()<C-M>p
+nmap <Leader>fdt :s/\.tapp\((.\{-})\)\=//cg<CR>
