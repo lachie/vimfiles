@@ -21,7 +21,6 @@ Bundle "tpope/vim-fugitive"
 " file nav
 Bundle "scrooloose/nerdtree"
 Bundle "kien/ctrlp.vim"
-" Bundle "mileszs/ack.vim"
 Bundle 'rking/ag.vim'
 
 " text nav
@@ -30,7 +29,6 @@ Bundle 'tapichu/Align'
 Bundle "godlygeek/tabular"
 Bundle "scrooloose/nerdcommenter"
 Bundle "ervandew/supertab"
-
 
 " Bundle "kana/vim-textobj-user"
 " Bundle "nelstrom/vim-textobj-rubyblock"
@@ -50,7 +48,11 @@ Bundle "ervandew/supertab"
 " Bundle "vim-scripts/VimClojure"
 "
 " Bundle "plasticboy/vim-markdown"
-" Bundle "ekalinin/Dockerfile.vim"
+
+" Bundle "agrewal/vim-thrift"
+" Bundle "plasticboy/vim-markdown"
+Bundle "ekalinin/Dockerfile.vim"
+
 Bundle "ngmy/vim-rubocop"
 Bundle "elixir-lang/vim-elixir"
 
@@ -60,6 +62,8 @@ Bundle "pangloss/vim-javascript"
 Bundle "tpope/vim-fireplace"
 Bundle "guns/vim-clojure-static"
 Bundle "guns/vim-clojure-highlight"
+
+Bundle "Matt-Deacalion/vim-systemd-syntax"
 
 " ruby aids
 Bundle 'vimwiki'
