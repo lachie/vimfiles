@@ -8,6 +8,8 @@ call vundle#rc()
 " base
 Bundle "gmarik/vundle"
 
+Bundle "w0ng/vim-hybrid"
+
 " UI
 Bundle "bling/vim-airline"
 " Bundle "nathanaelkane/vim-indent-guides"
@@ -30,6 +32,8 @@ Bundle "godlygeek/tabular"
 Bundle "scrooloose/nerdcommenter"
 Bundle "ervandew/supertab"
 
+Bundle "tpope/vim-abolish"
+
 " Bundle "kana/vim-textobj-user"
 " Bundle "nelstrom/vim-textobj-rubyblock"
 " Bundle "tpope/vim-surround"
@@ -42,7 +46,7 @@ Bundle "ervandew/supertab"
 "Bundle "tpope/vim-haml"
 
 " language support
-" Bundle "kchmck/vim-coffee-script"
+Bundle "kchmck/vim-coffee-script"
 
 " Bundle "groenewege/vim-less"
 " Bundle "vim-scripts/VimClojure"
@@ -56,6 +60,7 @@ Bundle "ekalinin/Dockerfile.vim"
 Bundle "ngmy/vim-rubocop"
 Bundle "elixir-lang/vim-elixir"
 
+Bundle "jelera/vim-javascript-syntax"
 Bundle "pangloss/vim-javascript"
 
 " Bundle "vim-scripts/VimClojure"
