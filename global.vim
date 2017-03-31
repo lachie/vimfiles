@@ -4,7 +4,8 @@ syntax on             " Enable syntax highlighting
 "colorscheme Tomorrow-Night
 "colorscheme Tomorrow-Night-Eighties
 "colorscheme Tomorrow-Night-Bright
-colorscheme zenburn
+" colorscheme zenburn
+colorscheme hybrid
 
 set background=dark
 
