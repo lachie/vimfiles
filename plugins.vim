@@ -11,6 +11,12 @@ hi IndentGuidesEven guibg=#6e6e6e
 " nerdtree
 let NERDTreeQuitOnOpen=1
 
+" nerdcommenter
+
+let g:NERDSpaceDelims = 1
+let g:NERDCompactSexyComs = 0
+
+
 " taglist
 let Tlist_Ctags_Cmd="/Users/lachie/homebrew/bin/ctags"
 
